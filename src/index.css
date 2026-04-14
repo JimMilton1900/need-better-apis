@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url('src/assets/pokemonback.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+
+}
+
+body h1{
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(254, 254, 14);
+  
+}
+
+.gen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  
+}
+
+.gen p{
+  font-style: bold;
+  font-size: 1.4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 3px;
+  color: rgb(5, 30, 40);
+  
+
+}
+
+.cardcont {
+
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-evenly;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100vw;
+  flex-wrap: wrap;
+  
+  
+}
+
+.cardcont .card{
+  border: none;
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(63, 136, 214);
+  border-radius: 10px;
+  margin: 5px;
+  width: 200px;
+  
+}
+.cardcont img:hover{
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.cardcont .card h2{
+  color: rgb(254, 254, 14);
+}
